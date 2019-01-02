@@ -1,0 +1,108 @@
+
+
+#shenme {
+	width: 575px;
+	height: 246px;
+	background: #d8d8d8;
+	position: relative;
+	overflow: hidden;
+	float: left;
+
+	overflow: hidden;
+    margin: 20px 10px;
+    position: relative;
+}
+
+/*图片的样式*/
+
+#shenme #imglist {
+	width: 575px;
+	height: 246px;
+}
+
+#shenme #imglist ul {
+	width: 984px;
+	/* height: 226px; */
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #fff;
+}
+
+#shenme #imglist li {
+	width: 191px;
+	height: 246px;
+	float: left;
+	border-right: 1px dashed #ccc;
+	position: relative;
+}
+
+#shenme #imglist li img{
+	width: 160px;
+	height: 160px;
+}
+
+#shenme #imglist li a div:nth-child(2){
+	width: 191px;
+	height: 160px;
+	position:absolute;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+}
+
+#shenme #imglist li a div:nth-child(1){
+	padding: 10px;
+}
+#shenme h3{
+	font-size: 16px;
+    padding-bottom: 8px;
+	font-weight: normal;
+	color: brown;
+}
+
+#shenme ul li:hover img{
+    transform: translateX(-10px);
+    transition: all 0.5s;
+}
+
+#moveimg p{
+	font-size: 12px;
+	color: black;
+}
+
+
+/*左右按钮*/
+
+#posibtn {
+	width: 575px;
+	height: 50px;
+	/*background: #ccc;*/
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -32px;
+	/* display: none; */
+}
+
+
+#posibtn p {
+	width: 30px;
+	height: 60px;
+	background: rgb(167, 167, 167);
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+}
+
+#posibtn p:nth-child(1) {
+	float: left;
+	margin-left: 10px;
+}
+
+#posibtn p:nth-child(2) {
+	float: right;
+	margin-right: 10px;
+}

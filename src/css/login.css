@@ -1,0 +1,81 @@
+#dengluye{
+    width: 100%;
+    background: #f6f6f6;
+    height: 100%;
+}
+#denglu{
+    width: 980px;
+    height: 80px;
+    margin: auto;
+}
+
+
+.logo{
+    position: relative;
+    width: 400px;
+    height: 80px;
+    display: block;
+    padding: 15px 0;
+}
+.logo img{width: 100px;height: 50px;float: left;}
+.logo span{
+    text-decoration: none;
+    color: #c80f1e;
+    font-weight: normal;
+    font-size: 24px;
+    position: absolute;
+    top: 23px;
+    left: 140px;
+    line-height: 36px;
+    border-left: 2px solid #d6d6d6;
+    padding-left: 40px;
+}
+
+#loginA img{
+    float: left;
+}
+
+.ksdl{
+    width: 980px;
+    height: 450px;
+    position: relative;
+    margin: auto;
+}
+
+.kuangA{
+    width: 350px;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    height: 380px;
+    border: 10px solid hsla(0,0%,100%,.5);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.loginbox{
+    width: 330px;
+    height: 360px;
+    background: #fff;
+}
+
+
+
+#username{
+    width: 200px;
+    height: 40px;
+    border-color: #c80f1e;
+}
+
+#password{
+    width: 200px;
+    height: 40px;
+    border-color: #c80f1e;
+}
+
+.container{padding-top: 50px;}
+
+#btnB{
+    background: #c80f1e;
+    border-color: #c80f1e;
+}
