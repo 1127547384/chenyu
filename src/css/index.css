@@ -1292,7 +1292,7 @@
 
 #fdj{
     width: 1200px;
-    height: 649px;
+    height: 800px;
     margin: auto;
 }
 
@@ -1311,7 +1311,7 @@
 /* 放大镜右侧 */
 #fdj-right{
     width: 740px;
-    height: 500px;
+    /* height: 500px; */
     float: right;
 }
 
@@ -1584,11 +1584,226 @@
     color: #C80F1E;
 }
 
+.shop-taocan p {
+    float: left;
+    color: #000;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
 /* 分割 */
 #fenge{
     width: 740px;
     float: right;
     height: 1px;
-    background: #ccc;
+    background: #dfdfdf;
     margin-top: 30px;
+}
+
+.peison{
+    font-size: 12px;
+    margin-top: 5px;
+    width: 198px;
+    padding: 0 4px 0 8px;
+    border: 1px solid #ccc;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+}
+
+.peison span{
+    color: #C80F1E;
+}
+
+.fenge2{
+    width: 740px;
+    height: 36px;
+    border-bottom: 1px solid #dfdfdf;
+    float: left;
+}
+
+.shop-bao{
+    width: 720px;
+    float: left;
+    padding-top: 5px;
+}
+
+.shop-bao>span{
+    width: 70px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    float: left;
+}
+
+.bao{
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 24px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 101px;
+    height: 24px;
+    float: left;
+    margin-right: 5px;
+}
+.bao:hover{
+    border-color: #C80F1E;
+}
+.shop-bao p{
+    padding-top: 28px;
+    font-size: 12px;
+    float: left;
+    margin-left: 71px;
+    color: #999;
+}
+
+/* 购物车 */
+#gouwuche{
+    float: left;
+    width: 740px;
+    /* height: 46px; */
+    margin-bottom: 40px;
+}
+
+#gouwuche ul{
+    margin-left: 71px;
+    margin-top: 20px;
+}
+
+#gouwuche ul li{
+    float: left;
+    margin-right: 20px;
+    
+}
+#gouwuche ul li a{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    line-height: 44px;
+    padding: 0 20px;
+    height: 44px;
+    border: #000 1px solid;
+}
+#gouwuche ul li:nth-child(1)  a{
+    background: #C80F1E;
+    color: #fff;
+    border: 0 ;
+    border: #C80F1E 1px solid;
+
+}
+
+/* tab配件 */
+#jieshao{
+    width: 1200px;
+    margin: auto;
+}
+
+.peijian{
+    width: 1200px;
+    height: 283px;
+    border: 1px solid #ccc;
+}
+
+.peijiana{
+    float: left;
+    width: 170px;
+    height: 259px;
+}
+
+.peijiana span{
+    width: 140px;
+    height: 39px;
+    display: block;
+    padding: 0 15px;
+    line-height: 40px;
+    font-size: 14px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #505050;
+}
+.peijiana p {
+    padding: 0 15px;
+    font-size: 12px;
+    color: #000;
+    float: left;
+}
+/* tab */
+.peijiantab{
+    width: 1030px;
+    height: 281px;
+    float: left;
+}
+
+#menu{width:1030px; overflow:hidden;height: 281px;background: #f7f7f7;position: relative;}
+#menu #navAA {display:block;width:100%;list-style:none;}
+#menu #navAA li {float:left;width:114px;border-bottom: 1px solid #000;}
+#menu #navAA li span {display:block;line-height:39px;text-decoration:none;padding:0 0 0 5px; text-align:center;}
+/* #menu_con{ width:358px; height:135px; border-top:none} */
+.tag{overflow:hidden;width: 860px;height: 240px;background: #fff;}
+.selected{background:#505050; color:rgb(255, 255, 255);}
+#menu_con ul li{
+    width: 133px;
+    height: 184px;
+    float: left;
+    margin-left: 10px;
+}
+#menu_con ul li img{
+    width: 120px;
+    margin: 10px 5px;
+}
+
+#menu_con ul li p {
+    color: #000;
+    font-size: 12px;
+}
+
+#menu_con ul li strong{
+    color: #c80f1e;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#youbian{
+    width: 170px;
+    height: 242px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: #fff;
+}
+
+#youbian h4{
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: bold;
+    color: #c80f1e;
+    line-height: 60px;
+    padding-left: 24px;
+}
+#youbian span{
+    font-size: 12px;
+}
+#youbian p{
+    color:rgb(255, 0, 0);
+}
+#youbian p span{
+    display: inline-block;
+    font-size: 12px;
+    color: #000;
+    margin-top: 20px;
+}
+
+#youbian a{
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    margin-top: 15px;
+    background: #c80f1e;
+    color: #fff;
+    border-radius: 1px;
+    text-align: center;
+    margin-top: 40px;
 }
