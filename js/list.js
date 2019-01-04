@@ -12,7 +12,7 @@ window.onload = function () {
 
         ajax('GET', url, data, function (str) {
             var arr = JSON.parse(str);
-            // console.log(str);
+            console.log(str);
             var res = arr.map(function (item) {
                 return `<li data-id=${item.id}>
                             <p class="item">

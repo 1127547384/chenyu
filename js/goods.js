@@ -6,7 +6,9 @@ window.onload = function () {
     var fdj = document.querySelector('#fdj');
     var gouwuche = document.querySelector('.gouwuche');
     ajax('GET', url, data, function (str) {
+        
         var arr = JSON.parse(str);
+        // console.log(arr)
         var res = arr.map(function (item) {
             return `
                                 <div id="fdj">
@@ -136,7 +138,7 @@ window.onload = function () {
 
                                     <div id="gouwuche">
                                         <ul>
-                                            <li><a href="#">立即购买</a></li>
+                                            <li><a href="../html/cart.html">立即购买</a></li>
                                             <li><a href="#">加入购物车</a></li>
                                             <li><a href="#">以旧换新</a></li>
                                         </ul>
@@ -150,8 +152,18 @@ window.onload = function () {
         fdj.innerHTML = res;
     });
 
+    // $('#gouwuche').on('click', 'li', function () {
+    //     var id = $(this).attr('data-id');
+    //     console.log(id);
+    //     window.open('../html/goods.html?id=' + id);
+    // });
+   
+
+
 
     fdj.onmouseover = function () {
+
+       
         (function ($) {
 
             $.fn.jqueryzoom = function (options) {
