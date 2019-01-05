@@ -36,7 +36,7 @@ $(function() {
  };
 //  轮播图
 var arr=["timg1.jpg","timg2.jpg","timg3.jpg","timg4.jpg","timg5.jpg"];
-var ord = 0;//代表当前图片的序号，从0开始。
+var ord = 0;
 var myTimer = null;
  
 function  initUI() {

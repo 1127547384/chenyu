@@ -4,9 +4,9 @@ window.onload = function () {
     var url = '../src/api/goods.php';
     var data = `id=${id}&time=${new Date()}`;
     var fdj = document.querySelector('#fdj');
-    var gouwuche = document.querySelector('.gouwuche');
+    // var gouwuche = document.querySelector('.gouwuche');
     ajax('GET', url, data, function (str) {
-        
+
         var arr = JSON.parse(str);
         // console.log(arr)
         var res = arr.map(function (item) {
@@ -152,18 +152,9 @@ window.onload = function () {
         fdj.innerHTML = res;
     });
 
-    // $('#gouwuche').on('click', 'li', function () {
-    //     var id = $(this).attr('data-id');
-    //     console.log(id);
-    //     window.open('../html/goods.html?id=' + id);
-    // });
-   
-
-
-
     fdj.onmouseover = function () {
 
-       
+
         (function ($) {
 
             $.fn.jqueryzoom = function (options) {
@@ -688,53 +679,54 @@ window.onload = function () {
 
     };
 
-// tab
-    var tabs=function(){
-        function tag(name,elem){
-            return (elem||document).getElementsByTagName(name);
+    // tab
+    var tabs = function () {
+        function tag(name, elem) {
+            return (elem || document).getElementsByTagName(name);
         }
         //获得相应ID的元素
-        function id(name){
+        function id(name) {
             return document.getElementById(name);
         }
-        function first(elem){
-            elem=elem.firstChild;
-            return elem&&elem.nodeType==1? elem:next(elem);
+
+        function first(elem) {
+            elem = elem.firstChild;
+            return elem && elem.nodeType == 1 ? elem : next(elem);
         }
-        function next(elem){
-            do{
-                elem=elem.nextSibling;  
-            }while(
-                elem&&elem.nodeType!=1  
+
+        function next(elem) {
+            do {
+                elem = elem.nextSibling;
+            } while (
+                elem && elem.nodeType != 1
             )
             return elem;
         }
         return {
-            set:function(elemId,tabId){
-                var elem=tag("li",id(elemId));
-                var tabs=tag("div",id(tabId));
-                var listNum=elem.length;
-                var tabNum=tabs.length;
-                for(var i=0;i<listNum;i++){
-                        elem[i].onclick=(function(i){
-                            return function(){
-                                for(var j=0;j<tabNum;j++){
-                                    if(i==j){
-                                        tabs[j].style.display="block";
-                                        //alert(elem[j].firstChild);
-                                        elem[j].firstChild.className="selected";
-                                    }
-                                    else{
-                                        tabs[j].style.display="none";
-                                        elem[j].firstChild.className="";
-                                    }
+            set: function (elemId, tabId) {
+                var elem = tag("li", id(elemId));
+                var tabs = tag("div", id(tabId));
+                var listNum = elem.length;
+                var tabNum = tabs.length;
+                for (var i = 0; i < listNum; i++) {
+                    elem[i].onclick = (function (i) {
+                        return function () {
+                            for (var j = 0; j < tabNum; j++) {
+                                if (i == j) {
+                                    tabs[j].style.display = "block";
+                                    //alert(elem[j].firstChild);
+                                    elem[j].firstChild.className = "selected";
+                                } else {
+                                    tabs[j].style.display = "none";
+                                    elem[j].firstChild.className = "";
                                 }
                             }
-                        })(i)
+                        }
+                    })(i)
                 }
             }
         }
     }();
-    tabs.set("navAA","menu_con");//执行
+    tabs.set("navAA", "menu_con"); //执行
 
 }

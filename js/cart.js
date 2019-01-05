@@ -2,6 +2,7 @@
 $(function () {
 	// 渲染数据：jq的ajax
 	$.ajax({
+		
 		type: "get",
 		url: "../src/api/goods.php",
 		async: true,
